@@ -1,0 +1,65 @@
+@import "reset";
+@import "vars";
+
+@import "base";
+
+@import "nav";
+
+@import "arrival";
+
+.registration {
+    &__container {
+        padding-top: 64px;
+        padding-bottom: 96px;
+        display: flex;
+
+    }
+    &__form {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        & h3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__comment {
+    }
+    &__header {
+    }
+    &__text {
+    }
+    &__list {
+    }
+}
+
+.registration__container {
+}
+
+.registration__form {
+}
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.form__name {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.form__sex {
+}
+.form__comment {
+}
+.registration__comment {
+}
+.registration__header {
+}
+.registration__text {
+}
+.registration__list {
+}
