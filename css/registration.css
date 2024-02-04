@@ -237,29 +237,253 @@ details[open] .details__box {
   padding-bottom: 64px;
 }
 
-.registration__container {
-  padding-top: 64px;
-  padding-bottom: 96px;
-  display: flex;
-}
-.registration__form {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-}
-.registration__form h3 {
-  font-weight: 400;
+.form__header {
   font-size: 16px;
+  font-weight: 400;
   line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
 }
-.form__container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.form__container form {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+.form__container input[type=text],
+.form__container input[type=password],
+.form__container input[type=date],
+.form__container input[type=datetime],
+.form__container input[type=email],
+.form__container input[type=number],
+.form__container input[type=search],
+.form__container input[type=tel],
+.form__container input[type=time],
+.form__container input[type=url],
+.form__container textarea,
+.form__container select {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 8px 18px;
+  height: 48px;
+  width: 100%;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+.form__container input::-moz-placeholder {
+  color: #e1e1e1;
+}
+.form__container input::placeholder {
+  color: #e1e1e1;
+}
+.form__container input:focus,
+.form__container textarea:focus,
+.form__container select:focus {
+  border-color: #f16d7f;
+}
+.form__container button {
+  text-transform: uppercase;
+  padding: 11px 15px;
+  border: 1px solid #6f6e6e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.form__container button:hover {
+  color: #fbfbfb;
+  background-color: #f16d7f;
 }
 
+.form__header {
+  margin-bottom: 0;
+}
+.form__container {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form__container input[type=text],
+.form__container input[type=email],
+.form__container input[type=password] {
+  margin: 0;
+}
+.form__container button {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  align-items: center;
+}
+.form__container button svg {
+  fill: #5d5d5d;
+}
+.form__container button:hover svg {
+  fill: #fbfbfb;
+}
 .form__name {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.form__sex {
+  display: flex;
+  gap: 20px;
+}
+.form__sex p {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.form__comment {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #e1e1e1;
+}
+
+.registration__container {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+}
+.registration__comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.registration__list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__list ul li {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.registration__list ul li span {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/icons/list.svg);
+}
+
+.subscribe {
+  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left/cover no-repeat;
+}
+.subscribe__container {
+  padding-top: 97px;
+  padding-bottom: 156px;
+  display: flex;
+  gap: 223px;
+  color: #222;
+  line-height: 167.2%;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.subscribe__image {
+  width: 96px;
+  height: 96px;
+}
+.subscribe__comment {
+  width: 359px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.subscribe__icontext {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222;
+}
+.subscribe__header {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.subscribe__subheader {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.subscribe__form {
+  width: 557px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input[type=text] {
+  flex-grow: 1;
+  padding: 19px;
+}
+
+input[type=submit] {
+  padding: 19px;
+  color: white;
+  background: #f16d7f;
+  border-radius: 0 50px 50px 0;
+}
+
+.form {
+  width: 356px;
+  border-radius: 50px;
+  background: #e1e1e1;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #222;
+}
+
+.footer__container {
+  padding-top: 23px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__cp {
+  line-height: 19px;
+  color: #fbfbfb;
+}
+.footer__icons {
+  display: flex;
+  gap: 7px;
+}
+.footer__iconbox {
+  width: 31px;
+  height: 32px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer__iconbox:hover {
+  background-color: #f16d7f;
+}
+.footer__iconbox:hover path {
+  fill: white;
 }/*# sourceMappingURL=registration.css.map */
