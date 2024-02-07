@@ -159,6 +159,7 @@ details[open] .details__box {
   padding: 32px 74px 32px 33px;
   top: 75px;
   right: 0;
+  z-index: 1000;
 }
 
 .topmenu {
@@ -643,4 +644,95 @@ footer {
 }
 .footer__iconbox:hover path {
   fill: white;
+}
+
+@media screen and (max-width: 1204px) {
+  .center {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .subscribe__container {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    gap: 58px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .center {
+    width: 736px;
+    margin: 0 auto;
+  }
+  .nav__container {
+    width: 704px;
+  }
+  .subscribe {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left -350px/cover no-repeat;
+  }
+  .footer__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .center {
+    width: 91.4666%;
+  }
+  .hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+  .nav__right {
+    display: block;
+  }
+  .subscribe {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left -410px/cover no-repeat;
+  }
+  .subscribe__container {
+    padding-bottom: 110px;
+    gap: 75px;
+  }
+  .form {
+    width: 341px;
+  }
+  .footer__container {
+    padding-top: 43px;
+    padding-bottom: 9px;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .operation {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .operation__container {
+    width: 360px;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .operation {
+    padding-bottom: 81px;
+  }
+  .operation__container {
+    width: 348px;
+    gap: 47px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .arrival__menu {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  .pack {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=catalog.css.map */

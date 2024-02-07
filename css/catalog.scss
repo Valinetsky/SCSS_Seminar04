@@ -102,7 +102,7 @@
     }
 }
 
-@import "choise";
+@import "choice";
 
 @import "secGoods";
 
@@ -137,3 +137,25 @@
 @import "secSubscribe";
 
 @import "footer";
+
+@import "mediaCommon";
+
+@import "secOperationMedia";
+
+@media screen and (max-width: 1024px) {
+    .arrival {
+        &__menu {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .pack {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
