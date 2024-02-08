@@ -140,22 +140,34 @@
 
 @import "mediaCommon";
 
+@import "secGoodsMedia";
+
 @import "secOperationMedia";
 
-@media screen and (max-width: 1024px) {
-    .arrival {
-        &__menu {
-            display: grid;
-            gap: 16px;
-            grid-template-columns: repeat(2, 1fr);
-            padding-top: 24px;
-            padding-bottom: 40px;
+@import "arrivalMedia";
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .menu {
+        &__text_bold {
+            display: none;
+        }
+        &__filter {
+            height: 25px;
+        }
+        &__details {
+            &[open] {
+                top: -13px;
+            }
+        }
+        &__switch {
+            svg {
+                height: 25px;
+                width: auto;
+            }
         }
     }
 
-    .pack {
-        display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(2, 1fr);
+    .choice {
+        gap: 24px;
     }
 }

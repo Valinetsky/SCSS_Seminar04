@@ -118,3 +118,46 @@
 @import "secSubscribe";
 
 @import "footer";
+
+@import "mediaCommon";
+
+@import "secGoodsMedia";
+
+@import "arrivalMedia";
+
+@media screen and (max-width: 1024px) {
+    .product {
+        &__info {
+            position: initial;
+            padding: 65px 106px;
+            left: 0;
+            transform: translateX(0);
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .goods {
+        padding: 128px 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .product {
+        &__info {
+            padding: 65px 24px;
+        }
+        &__price {
+            padding-bottom: 32px;
+        }
+    }
+    .choice {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 48px;
+        margin-bottom: 64px;
+    }
+
+    .goods {
+        padding: 64px 0;
+    }
+}
