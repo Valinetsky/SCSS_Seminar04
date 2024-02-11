@@ -5,8 +5,6 @@
     }
 
     .subscribe__container {
-        padding-top: 64px;
-        padding-bottom: 140px;
         gap: 58px;
         justify-content: center;
     }
@@ -44,18 +42,6 @@
 
     .nav__right {
         display: block;
-    }
-
-    .subscribe {
-        background: linear-gradient(
-                rgba(244, 244, 244, 0.7),
-                rgba(244, 244, 244, 0.7)
-            ),
-            url(../img/subscribe_bg.png) bottom left -410px / cover no-repeat;
-        &__container {
-            padding-bottom: 110px;
-            gap: 75px;
-        }
     }
 
     .form {

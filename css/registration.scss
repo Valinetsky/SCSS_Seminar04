@@ -7,8 +7,6 @@
 
 @import "arrival";
 
-@import "arrivalMedia";
-
 @import "mediaCommon";
 
 @import "form";
@@ -50,6 +48,7 @@
     &__sex {
         display: flex;
         gap: 20px;
+        accent-color: $accentColor;
         & p {
             display: flex;
             gap: 10px;
