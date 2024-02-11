@@ -129,6 +129,7 @@ nav {
   padding-top: 18px;
   padding-bottom: 19px;
   width: 100%;
+  overflow: hidden;
 }
 
 .nav__container {
@@ -324,9 +325,6 @@ details[open] .details__box {
   .center {
     width: 736px;
     margin: 0 auto;
-  }
-  .nav__container {
-    width: 704px;
   }
   .subscribe {
     background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left -350px/cover no-repeat;
