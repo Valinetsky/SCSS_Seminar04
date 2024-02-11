@@ -237,6 +237,85 @@ details[open] .details__box {
   padding-bottom: 64px;
 }
 
+@media screen and (max-width: 1024px) {
+  .arrival__menu {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .arrival__top {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .arrival__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (max-width: 1204px) {
+  .center {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .subscribe__container {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    gap: 58px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .center {
+    width: 736px;
+    margin: 0 auto;
+  }
+  .nav__container {
+    width: 704px;
+  }
+  .subscribe {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left -350px/cover no-repeat;
+  }
+  .footer__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .center {
+    width: 91.4666%;
+  }
+  .hidemobile {
+    visibility: hidden;
+    display: none;
+  }
+  .nav__right {
+    display: block;
+  }
+  .subscribe {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left -410px/cover no-repeat;
+  }
+  .subscribe__container {
+    padding-bottom: 110px;
+    gap: 75px;
+  }
+  .form {
+    width: 341px;
+  }
+  .footer__container {
+    padding-top: 43px;
+    padding-bottom: 9px;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
 .form__header {
   font-size: 16px;
   font-weight: 400;
@@ -382,6 +461,28 @@ details[open] .details__box {
   background-image: url(../img/icons/list.svg);
 }
 
+@media screen and (max-width: 1024px) {
+  .registration__container {
+    gap: 22px;
+  }
+  .registration__container div {
+    width: 100%;
+  }
+  .registration__comment {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .registration__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 .subscribe {
   background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bg.png) bottom left/cover no-repeat;
 }

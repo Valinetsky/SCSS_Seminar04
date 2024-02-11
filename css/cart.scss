@@ -7,7 +7,11 @@
 
 @import "arrival";
 
+@import "arrivalMedia";
+
 @import "cartitem";
+
+@import "mediaCommon";
 
 .cartitem {
     width: 652px;
@@ -64,11 +68,12 @@
     &__button {
         padding: 16px 40px;
         border: 1px solid $burgerMenuLineColor;
-        font-family: Lato;
+
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
         letter-spacing: 0em;
+        text-align: center;
     }
     &__order {
         width: 360px;
@@ -151,8 +156,6 @@
 // }
 @import "form";
 
-
-
 .total {
     font-size: 16px;
     font-weight: 400;
@@ -196,6 +199,97 @@
             transform: translateX(-50%);
             top: -17px;
             border-top: 1px solid $formBgColor;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cart {
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__box {
+            width: 100%;
+        }
+        &__order {
+            padding-top: 64px;
+            width: 100%;
+        }
+        &__form {
+            display: flex;
+
+            justify-content: space-between;
+            gap: 16px;
+        }
+        &__total {
+            width: 50%;
+            margin-top: 38px;
+        }
+    }
+    .form__container {
+        width: 50%;
+    }
+
+    .cartitem {
+        width: 100%;
+
+        &__imagebox {
+            width: 33%;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .cart {
+        &__container {
+            padding-top: 48px;
+            padding-bottom: 96px;
+        }
+        &__box {
+            gap: 32px;
+        }
+        &__buttons-box {
+            gap: 8px;
+        }
+        &__button {
+            width: 100%;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0em;
+        }
+        &__form {
+            flex-direction: column;
+        }
+        &__total {
+            width: 100%;
+            margin-top: 38px;
+        }
+    }
+    .form__container {
+        width: 100%;
+    }
+    .cartitem {
+        &__box {
+            padding: 14px 12px 38px 17px;
+        }
+        &__imagebox {
+            width: 40%;
+        }
+        &__info {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        &__header {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        &__number {
+            font-size: 14px;
         }
     }
 }
